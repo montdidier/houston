@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
 
 gem 'rails', '~> 3.2.16'
 
@@ -7,7 +6,7 @@ gem 'google_drive'
 gem 'google-spreadsheet-ruby'
 gem 'roo', github: 'intridea/roo'
 
-gem 'pg'
+gem 'mysql2'
 
 gem "therubyracer"
 gem 'best_in_place'
@@ -34,6 +33,12 @@ end
 group :development do
   gem 'heroku'
   gem 'pry-rails'
+
+	gem 'capistrano'
+	gem 'capistrano-rvm'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-passenger'
 end
 
 group :test, :development do
